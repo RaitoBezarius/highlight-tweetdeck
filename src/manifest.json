@@ -1,0 +1,17 @@
+{
+    "name": "Highlight TweetDeck",
+    "short_name": "HGTDD",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["https://tweetdeck.twitter.com/*",
+                    "http://tweetdeck.twitter.com/*"],
+        "js": ["js/highlight.js", "js/content.js"],
+        "css": ["styles/dark.css"]
+        }],
+    "permissions": [
+        "storage",
+        "https://tweetdeck.twitter.com/*",
+        "tabs"
+    ]
+}
